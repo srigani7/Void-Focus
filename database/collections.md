@@ -1,0 +1,24 @@
+# MongoDB Collections
+
+- `users`
+  - email
+  - passwordHash
+  - focusStreak
+  - stopPassword
+- `blockedapps`
+  - userId
+  - blocked[] `{ name, enabled }`
+  - whitelist[]
+- `focussessions`
+  - userId
+  - startedAt / endedAt
+  - durationMinutes
+  - active
+  - endedReason
+- `sessionlogs`
+  - userId
+  - sessionId
+  - appName
+  - action
+  - message
+  - timestamp
